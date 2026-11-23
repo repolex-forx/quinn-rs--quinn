@@ -1,0 +1,32 @@
+[2026-11-23T05:42:00Z] === ENRICH ITERATION 1 START | repo=quinn-rs/quinn sha=38c036ad ===
+[2026-11-23T05:42:00Z] [iter=1] PHASE START: enrich repo=quinn-rs/quinn sha=38c036ad runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/38c036ad-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/38c036ad39aaa421b0cc2c51c6d708f225c425ab.nq.gz
+[2026-11-23T05:42:00Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-23T05:42:14Z] [iter=1] AST store loaded triples=1462306 load_secs=14 mem_mb=889 MB
+[2026-11-23T05:42:14Z] [iter=1] Step 2: Finding LSP targets mem_mb=889 MB
+[2026-11-23T05:42:18Z] [iter=1] LSP targets found call_sites=13249 imports=275 extends=0 implements=105 secs=3
+[2026-11-23T05:42:20Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=889 MB
+[2026-11-23T05:42:27Z] [iter=1] Position index built positions=95716 nodes_with_types=116100 secs=7 mem_mb=889 MB
+[2026-11-23T05:42:27Z] [iter=1] Step 3: Starting LSP resolution mem_mb=889 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T05:42:27Z] [iter=1] Resolving target type target_type=call_site count=13249
+[2026-11-23T05:42:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.0 files_done=0 resolved=0 errors=0 current=quinn-proto/src/tests/mod.rs
+[2026-11-23T05:52:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=1 resolved=2169 errors=0 current=quinn-udp/src/unix.rs
+[2026-11-23T05:52:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.5 files_done=2 resolved=2417 errors=0 current=quinn-proto/src/connection/mod.rs
+[2026-11-23T05:56:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.6 files_done=3 resolved=3559 errors=0 current=quinn-proto/src/tests/token.rs
+[2026-11-23T05:57:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=4 resolved=3806 errors=0 current=quinn/src/work_limiter.rs
+[2026-11-23T05:57:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=7 resolved=4066 errors=0 current=quinn-proto/src/endpoint.rs
+[2026-11-23T05:58:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.9 files_done=8 resolved=4428 errors=0 current=quinn-proto/src/connection/streams/state.rs
+[2026-11-23T06:01:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=9 resolved=5131 errors=0 current=quinn/examples/client.rs
+[2026-11-23T06:01:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.9 files_done=12 resolved=5515 errors=0 current=quinn/src/endpoint.rs
+[2026-11-23T06:02:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.5 files_done=13 resolved=5797 errors=0 current=perf/src/client.rs
+[2026-11-23T06:04:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=15 resolved=6369 errors=0 current=perf/src/noprotection.rs
+[2026-11-23T06:04:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.9 files_done=19 resolved=6704 errors=0 current=quinn-proto/src/connection/qlog.rs
+[2026-11-23T06:05:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=22 resolved=7053 errors=0 current=quinn/src/tests.rs
+[2026-11-23T06:07:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=23 resolved=7776 errors=0 current=quinn-proto/src/connection/assembler.rs
+[2026-11-23T06:08:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=24 resolved=8110 errors=0 current=quinn-proto/src/congestion/bbr/mod.rs
+[2026-11-23T06:09:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=26 resolved=8449 errors=0 current=quinn-proto/src/frame.rs
+[2026-11-23T06:10:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.7 files_done=27 resolved=8756 errors=0 current=quinn/benches/bench.rs
+[2026-11-23T06:11:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.9 files_done=30 resolved=9129 errors=0 current=quinn-proto/src/connection/streams/recv.rs
+[2026-11-23T06:12:00Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=30 new_files_this_iter=30 mem_mb=889 MB
+[2026-11-23T06:12:00Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/38c036ad39aaa421b0cc2c51c6d708f225c425ab.nq.gz triples=82779
+[2026-11-23T06:12:01Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-11-23T06:12:01Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=30
