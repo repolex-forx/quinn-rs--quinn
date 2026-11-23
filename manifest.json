@@ -1570,7 +1570,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-hash-2.1.1/src/lib.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/38c036ad39aaa421b0cc2c51c6d708f225c425ab/chunk-001.nq.gz",
+      "dep": "dep/38c036ad39aaa421b0cc2c51c6d708f225c425ab.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
