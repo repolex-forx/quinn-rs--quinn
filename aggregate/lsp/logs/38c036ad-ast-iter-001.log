@@ -1,0 +1,7 @@
+[2026-11-23T05:38:11Z] === AST ITERATION 1 START | repo=quinn-rs/quinn sha=38c036ad ===
+[2026-11-23T05:38:11Z] [iter=1] PHASE START: ast repo=quinn-rs/quinn sha=38c036ad
+[2026-11-23T05:38:11Z] [iter=1] Building AST aggregate chunks
+[2026-11-23T05:39:58Z] [iter=1] AST chunks built count=1 triples=1462306
+[2026-11-23T05:39:58Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/38c036ad39aaa421b0cc2c51c6d708f225c425ab/.complete
+[2026-11-23T05:39:58Z] [iter=1] PHASE END: ast elapsed_s=107 elapsed_min=1.8
+[2026-11-23T05:39:58Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
