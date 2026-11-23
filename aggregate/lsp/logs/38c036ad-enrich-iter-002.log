@@ -1,0 +1,38 @@
+[2026-11-23T06:14:15Z] === ENRICH ITERATION 2 START | repo=quinn-rs/quinn sha=38c036ad ===
+[2026-11-23T06:14:15Z] [iter=2] PHASE START: enrich repo=quinn-rs/quinn sha=38c036ad runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/38c036ad-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/38c036ad39aaa421b0cc2c51c6d708f225c425ab.nq.gz
+[2026-11-23T06:14:15Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T06:14:26Z] [iter=2] AST store loaded triples=1462306 load_secs=10 mem_mb=889 MB
+[2026-11-23T06:14:26Z] [iter=2] Step 2: Finding LSP targets mem_mb=889 MB
+[2026-11-23T06:14:30Z] [iter=2] LSP targets found call_sites=13249 imports=275 extends=0 implements=105 secs=4
+[2026-11-23T06:14:34Z] [iter=2] Loaded checkpoint partial graph triples=82779
+[2026-11-23T06:14:34Z] [iter=2] Primed enclosing-def cache from persisted triples entries=1003
+[2026-11-23T06:14:37Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=889 MB
+[2026-11-23T06:14:47Z] [iter=2] Position index built positions=95716 nodes_with_types=116100 secs=9 mem_mb=889 MB
+[2026-11-23T06:14:47Z] [iter=2] Step 3: Starting LSP resolution mem_mb=889 MB already_completed_types=[] already_completed_files=30
+[2026-11-23T06:14:47Z] [iter=2] Resolving target type target_type=call_site count=13249
+[2026-11-23T06:15:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=quinn-proto/src/connection/streams/recv.rs
+[2026-11-23T06:15:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=1 resolved=81 errors=0 current=quinn/src/send_stream.rs
+[2026-11-23T06:16:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=3 resolved=237 errors=0 current=quinn-proto/src/connection/pacing.rs
+[2026-11-23T06:17:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=7 resolved=438 errors=0 current=quinn-proto/src/tests/util.rs
+[2026-11-23T06:18:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=8 resolved=750 errors=0 current=quinn-proto/src/config/transport.rs
+[2026-11-23T06:18:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=10 resolved=1050 errors=0 current=quinn/src/recv_stream.rs
+[2026-11-23T06:19:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=12 resolved=1325 errors=0 current=quinn-proto/src/congestion/bbr/min_max.rs
+[2026-11-23T06:20:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=16 resolved=1580 errors=0 current=quinn-proto/src/connection/streams/mod.rs
+[2026-11-23T06:20:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=18 resolved=1845 errors=0 current=quinn/examples/insecure_connection.rs
+[2026-11-23T06:22:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=25 resolved=2245 errors=0 current=bench/src/stats.rs
+[2026-11-23T06:22:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.6 files_done=28 resolved=2437 errors=0 current=quinn-proto/src/bloom_token_log.rs
+[2026-11-23T06:23:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=31 resolved=2698 errors=0 current=docs/book/src/bin/data-transfer.rs
+[2026-11-23T06:24:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=33 resolved=2854 errors=0 current=quinn-proto/src/config/mod.rs
+[2026-11-23T06:24:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=36 resolved=3019 errors=0 current=docs/book/src/bin/certificate.rs
+[2026-11-23T06:25:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=42 resolved=3262 errors=0 current=quinn-proto/src/congestion/cubic.rs
+[2026-11-23T06:26:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=54 resolved=3521 errors=0 current=quinn-proto/src/varint.rs
+[2026-11-23T06:26:24Z] [iter=2] Target type resolved target_type=call_site resolved=3627 errors=0 secs=697 mem_mb=889 MB
+[2026-11-23T06:26:24Z] [iter=2] Resolving target type target_type=import_statement count=275
+[2026-11-23T06:26:31Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=12.3 files_done=0 resolved=0 errors=0 current=quinn/src/incoming.rs
+[2026-11-23T06:26:34Z] [iter=2] Target type resolved target_type=import_statement resolved=152 errors=0 secs=10 mem_mb=889 MB
+[2026-11-23T06:26:34Z] [iter=2] Resolving target type target_type=implements_clause count=105
+[2026-11-23T06:26:42Z] [iter=2] Target type resolved target_type=implements_clause resolved=78 errors=0 secs=8 mem_mb=889 MB
+[2026-11-23T07:10:45Z] [iter=2] Step 5: Writing final enrichment file triples=170524
+[2026-11-23T07:10:48Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/38c036ad39aaa421b0cc2c51c6d708f225c425ab.nq.gz size_kb=3928
+[2026-11-23T07:10:48Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-11-23T07:10:48Z] [iter=2] PHASE END: enrich elapsed_s=3393 elapsed_min=56.5 total_triples=170524
