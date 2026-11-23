@@ -1,0 +1,36 @@
+{
+  "commit_sha": "5e54ac6dcdfe9dafff011a56de3d234470761400",
+  "completed_files": [
+    "quinn-proto/src/connection/assembler.rs",
+    "quinn-proto/src/connection/mod.rs",
+    "quinn-proto/src/connection/streams/mod.rs",
+    "quinn-proto/src/connection/streams/state.rs",
+    "quinn-proto/src/range_set/array_range_set.rs",
+    "quinn-udp/src/windows.rs",
+    "quinn-udp/tests/tests.rs",
+    "quinn/src/connection.rs",
+    "quinn/src/endpoint.rs",
+    "quinn/src/tests.rs"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/quinn-rs/quinn/lsp/5e54ac6dcdfe9dafff011a56de3d234470761400",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/5e54ac6dcdfe9dafff011a56de3d234470761400.nq.gz",
+    "call_sites": 14442,
+    "import_statements": 290,
+    "call_targets_resolved": 6340,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 0,
+    "extends_clauses": 0,
+    "implements_clauses": 103,
+    "import_modules_denormalized": 552,
+    "import_symbols_denormalized": 0,
+    "extends_class_denormalized": 0,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 1804
+}
